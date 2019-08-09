@@ -1,59 +1,39 @@
-\documentclass[DM,authoryear,toc]{lsstdoc}
-% lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
+% you need to build with xelatex
+\documentclass[t,aspectratio=169]{beamer}
 
-\input{meta}
+\input{extras}
+\usepackage[backgroundTheme=LSST2017,
+  fonts=false, colorlinks=false,
+ footline={Project Comunity Workshop  $\bullet$ Tucson, AZ $\bullet$ August 12--15, 2019},
+meeting={Project Comunity Workshop},
+position={DM Project Manager}
+]{LSST-beamer}
+\usepackage{siunitx}
+\usepackage{framed}
 
-% Package imports go here.
 
-% Local commands go here.
+\title{LSST Data Management All Hands   }
+\date{12\textsuperscript{th} Aug 2019}
 
-% To add a short-form title:
-% \title[Short title]{Title}
-\title{Slide deck for DM all hands}
+\author{William O'Mullane}
+\institute{AURA/LSST}
 
-% Optional subtitle
-% \setDocSubtitle{A subtitle}
 
-\author{%
-William O'Mullane
-}
+\graphicspath{ {./figures} {./images/}  }
 
-\setDocRef{DMTN-128}
-\setDocUpstreamLocation{\url{https://github.com/lsst-dm/dmtn-128}}
 
-\date{\vcsDate}
-
-% Optional: name of the document's curator
-% \setDocCurator{The Curator of this Document}
-
-\setDocAbstract{%
-all hands slides
-}
-
-% Change history defined here.
-% Order: oldest first.
-% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
-% See LPM-51 for version number policy.
-\setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{William O'Mullane}
-}
 
 \begin{document}
 
-% Create the title page.
 \maketitle
-
-% ADD CONTENT HERE
-% You can also use the \input command to include several content files.
+\input{lsst}
+\input{overview}
+\input{status}
+\input{studies}
+\input{dmtrans}
+\input{conc}
 
 \appendix
-% Include all the relevant bib files.
-% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-\section{References} \label{sec:bib}
-\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
-
-% Make sure lsst-texmf/bin/generateAcronyms.py is in your path
-\section{Acronyms} \label{sec:acronyms}
-\input{acronyms.tex}
+\input{refs}
 
 \end{document}

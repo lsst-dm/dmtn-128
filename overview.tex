@@ -1,0 +1,92 @@
+\section{Data Management }
+
+\frame {\frametitle{Mission Statement}
+\begin{columns}
+\column{0.65\textwidth}
+      \includegraphics[width=1.0\textwidth]{images/DmMap}\\
+\column{0.35\textwidth}
+ \\
+\vspace{-6.5cm}
+
+DM's mission:\\
+    \textit{Stand up operable, maintainable, quality services to deliver high-quality LSST data products for science, all on time and within reasonable cost.}\\
+    \vspace{12pt}
+Development is distributed across the Americas.\\
+
+{\color{blue} Plus we have partners like IN2P3 (France).}\\
+\vspace{8pt}
+See the DM management plan, \citeds{LDM-294}.
+
+\end{columns}
+}
+
+
+\frame {\frametitle{DM Organization}
+\vspace{-0.5cm}
+\begin{columns}
+\column{0.73\textwidth}
+\begin{center}
+      \includegraphics[width=1.0\textwidth]{images/DmOrg}\\
+\end{center}
+\column{0.27\textwidth}
+
+\vspace{0.4cm}
+   Michelle Butler now NCSA TCAM \\ \smallskip
+   DMCCB more active with weekly meetings\\ \smallskip
+   SUIT is now dormant\\
+   Roles etc in \citeds{LDM-294}\\
+
+\end{columns}
+}
+
+\input{people}
+
+\frame {\frametitle{Thank You !}
+\vspace{-0.3cm}
+\
+\begin{columns}
+\begin{column}{0.3\textwidth}
+DM has been busy!\\ \smallskip
+$\sim{}1$ million lines of code/comments (C++/Python/Java/JavaScript/Kotlin; see SPIE paper by \citealp{2018SPIE10707E..09J})\\
+\end{column}
+\begin{column}{0.7\textwidth}
+
+\vspace{-1.3cm}
+      \includegraphics[width=1.0\textwidth]{images/linesOfCode}\\
+{\tiny \bf diagram by Tim Jenness; covers only the Science Pipelines codebase.}
+\end{column}
+\end{columns}
+}
+
+\input{statsum}
+
+
+\frame{\frametitle{DM Verification Control Document}
+\begin{itemize}
+\item DM VCD available at \citeds{LDM-692}.
+\begin{itemize}
+\item Provides traceability from DM Requirements to Test Results
+ through Verification Elements and Test Cases
+\end{itemize}
+\item DM Verification summary (from LDM-692 \S2):
+\end{itemize}
+
+\vspace{-9pt}
+\centering
+\small
+\begin{longtable}{rrr}
+&
+\begin{tabular}{@{}l@{}} Num.\\Requirements \end{tabular} &
+\begin{tabular}{@{}l@{}} Num. Verification\\Elements \end{tabular} \\ \hline\noalign{\smallskip}
+Not related to any Test Case & 260 & 536 \\[0.1cm]
+Related to NOT executed Test Cases & 352 & 384 \\[0.1cm]
+Related to Failed Test Cases & 2 & 2 \\[0.1cm]
+Related to Passed Test Cases & 79 & 80 \\[0.1cm]
+\hline\noalign{\smallskip}
+\textbf{Total} & \textbf{693} & \textbf{1002} \\
+\end{longtable}
+\vspace{-5pt}
+There are 58 1a requirements which should be verifified for commissioning start.
+}
+
+\input{goals}
